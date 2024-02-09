@@ -1,0 +1,21 @@
+div.logo.w3-dropdown-hover.w3-hide-small.w3-hide-medium {
+	background: white !important;
+}
+
+.logo img {
+	border-radius: 0;
+	border: none;
+}
+
+thead>tr {
+    background-color: #6734FF;
+    color: white;
+}
+
+tbody>tr:nth-child(odd) {
+    background-color: rgb(250 253 255) !important;
+}
+
+tbody>tr:nth-child(even) {
+    background-color: rgb(235 242 247) !important;
+}
