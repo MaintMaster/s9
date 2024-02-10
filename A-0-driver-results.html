@@ -24,10 +24,6 @@
                 <img src="./assets/maintmaster.png">
             </a>
             <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-hide-small w3-hide-medium">
-                <span class="w3-bar-item">---serier---</span>
-                    <a href="/2wd" class="w3-bar-item w3-button ">MaintMaster 2WD</a>
-                    <a href="/4wd" class="w3-bar-item w3-button ">MaintMaster 4WD</a>
-                    <a href="/s8" class="w3-bar-item w3-button ">MaintMaster s8</a>
                 <span class="w3-bar-item">---historiska---</span>
                     <a href="/s8" class="w3-bar-item w3-button ">MaintMaster s8</a>
                     <a href="/season7-4wd" class="w3-bar-item w3-button ">MaintMaster s7 4wd</a>
@@ -53,6 +49,15 @@
 			</div>
 		</div>
 
+		<div class="w3-dropdown-hover w3-hide-small w3-hide-medium">
+			<button class="w3-button">Teammästerskap</button>
+			<div class="w3-dropdown-content w3-bar-block w3-card-4 w3-hide-small w3-hide-medium">
+				<a href="./A-team-standings.html" class="w3-bar-item w3-button ">A</a>
+				<a href="./B-team-standings.html" class="w3-bar-item w3-button ">B</a>
+				<a href="./C-team-standings.html" class="w3-bar-item w3-button ">C</a>
+				<a href="./overall-team-standings.html" class="w3-bar-item w3-button ">Total</a>
+			</div>
+		</div>
 
 
 		<div class="w3-bar-item w3-right w3-hide-small w3-hide-medium">
@@ -82,13 +87,13 @@
             <a href="./B-driver-standings.html" class="w3-bar-item w3-button ">Poängställning - B</a>
             <a href="./C-driver-standings.html" class="w3-bar-item w3-button ">Poängställning - C</a>
             <a href="./overall-driver-standings.html" class="w3-bar-item w3-button ">Poängställning - Total</a>
+            <a href="./A-team-standings.html" class="w3-bar-item w3-button ">Teammästerskap - A</a>
+            <a href="./B-team-standings.html" class="w3-bar-item w3-button ">Teammästerskap - B</a>
+            <a href="./C-team-standings.html" class="w3-bar-item w3-button ">Teammästerskap - C</a>
+            <a href="./overall-team-standings.html" class="w3-bar-item w3-button ">Teammästerskap - Total</a>
 	</div>
 
 	<div id="seriesMobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large" style="overflow-y:scroll;max-height:95vh;">
-            <span class="w3-bar-item">---series---</span>
-                <a href="/2wd" class="w3-bar-item w3-button ">MaintMaster 2WD</a>
-                <a href="/4wd" class="w3-bar-item w3-button ">MaintMaster 4WD</a>
-                <a href="/s8" class="w3-bar-item w3-button ">MaintMaster s8</a>
             <span class="w3-bar-item">---historical---</span>
                 <a href="/s8" class="w3-bar-item w3-button ">MaintMaster s8</a>
                 <a href="/season7-4wd" class="w3-bar-item w3-button ">MaintMaster s7 4wd</a>
@@ -159,6 +164,7 @@
                     <th>Pos</th>
                     <th>Nat</th>
                     <th>Förare</th>
+                            <th>Team</th>
                         <th>Bil</th>
                         <td>PS</td>
                         <td>Diff</td>
@@ -175,13 +181,16 @@
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Björn Wermelin</td>
+                        <td class="text-left bold">Simon Sandegren</td>
+                                <td>
+                                    <img src="./assets/teams/Strängnäs Bilforum Racing Team.png" style="max-width:2em; max-height:2em;" alt="Strängnäs Bilforum Racing Team" title="Strängnäs Bilforum Racing Team"/>
+                                </td>
                             <td>
-                                <img src="./assets/cars/škoda.png" style="max-width:2em; max-height:2em;" alt="škoda" title="škoda"/>
+                                <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
                             </td>
-                            <td>00:07:21.424</td>
+                            <td>00:07:08.507</td>
                             <td>--</td>
-                        <td>00:38:32.452</td>
+                        <td>00:37:55.978</td>
                         <td>--</td>
                             <td>5</td>
                         <td>50</td>
@@ -192,65 +201,77 @@
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Dennis Hernehult</td>
+                        <td class="text-left bold">Björn Wermelin</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
                             <td>
-                                <img src="./assets/cars/volkswagen.png" style="max-width:2em; max-height:2em;" alt="volkswagen" title="volkswagen"/>
+                                <img src="./assets/cars/škoda.png" style="max-width:2em; max-height:2em;" alt="škoda" title="škoda"/>
                             </td>
-                            <td>00:07:36.629</td>
-                            <td>+00:00:15.205</td>
-                        <td>00:39:22.335</td>
-                        <td>+00:00:49.883</td>
-                            <td>2</td>
+                            <td>00:07:21.424</td>
+                            <td>+00:00:12.917</td>
+                        <td>00:38:32.452</td>
+                        <td>+00:00:36.474</td>
+                            <td>4</td>
                         <td>44</td>
-                        <td class="bold">46</td>
+                        <td class="bold">48</td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Sebastian Ågren</td>
+                        <td class="text-left bold">Dennis Hernehult</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
                             <td>
-                                <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
+                                <img src="./assets/cars/volkswagen.png" style="max-width:2em; max-height:2em;" alt="volkswagen" title="volkswagen"/>
                             </td>
-                            <td>00:07:29.488</td>
-                            <td>+00:00:08.064</td>
-                        <td>00:39:48.593</td>
-                        <td>+00:01:16.141</td>
-                            <td>4</td>
+                            <td>00:07:36.629</td>
+                            <td>+00:00:28.122</td>
+                        <td>00:39:22.335</td>
+                        <td>+00:01:26.357</td>
+                            <td></td>
                         <td>41</td>
-                        <td class="bold">45</td>
+                        <td class="bold">41</td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Mattias Wallström</td>
+                        <td class="text-left bold">Martin Zirnsack</td>
+                                <td>
+                                    <img src="./assets/teams/Strängnäs Bilforum Racing Team.png" style="max-width:2em; max-height:2em;" alt="Strängnäs Bilforum Racing Team" title="Strängnäs Bilforum Racing Team"/>
+                                </td>
                             <td>
                                 <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
                             </td>
-                            <td>00:07:40.672</td>
-                            <td>+00:00:19.248</td>
-                        <td>00:39:59.667</td>
-                        <td>+00:01:27.215</td>
-                            <td></td>
+                            <td>00:07:33.694</td>
+                            <td>+00:00:25.187</td>
+                        <td>00:39:38.774</td>
+                        <td>+00:01:42.796</td>
+                            <td>2</td>
                         <td>38</td>
-                        <td class="bold">38</td>
+                        <td class="bold">40</td>
                     </tr>
                     <tr>
                         <td>5</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Lars Wiik</td>
+                        <td class="text-left bold">Sebastian Ågren</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
                             <td>
-                                <img src="./assets/cars/hyundai.png" style="max-width:2em; max-height:2em;" alt="hyundai" title="hyundai"/>
+                                <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
                             </td>
-                            <td>00:07:35.801</td>
-                            <td>+00:00:14.377</td>
-                        <td>00:40:04.697</td>
-                        <td>+00:01:32.245</td>
+                            <td>00:07:29.488</td>
+                            <td>+00:00:20.981</td>
+                        <td>00:39:48.593</td>
+                        <td>+00:01:52.615</td>
                             <td>3</td>
                         <td>35</td>
                         <td class="bold">38</td>
@@ -260,48 +281,57 @@
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Per Clevfors</td>
+                        <td class="text-left bold">Mattias Wallström</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
                             <td>
-                                <img src="./assets/cars/hyundai.png" style="max-width:2em; max-height:2em;" alt="hyundai" title="hyundai"/>
+                                <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
                             </td>
-                            <td>00:07:37.706</td>
-                            <td>+00:00:16.282</td>
-                        <td>00:40:13.786</td>
-                        <td>+00:01:41.334</td>
-                            <td>1</td>
+                            <td>00:07:40.672</td>
+                            <td>+00:00:32.165</td>
+                        <td>00:39:59.667</td>
+                        <td>+00:02:03.689</td>
+                            <td></td>
                         <td>32</td>
-                        <td class="bold">33</td>
+                        <td class="bold">32</td>
                     </tr>
                     <tr>
                         <td>7</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Tomas Nordins</td>
+                        <td class="text-left bold">Lars Wiik</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
                             <td>
                                 <img src="./assets/cars/hyundai.png" style="max-width:2em; max-height:2em;" alt="hyundai" title="hyundai"/>
                             </td>
-                            <td>00:07:40.699</td>
-                            <td>+00:00:19.275</td>
-                        <td>00:40:27.558</td>
-                        <td>+00:01:55.106</td>
-                            <td></td>
+                            <td>00:07:35.801</td>
+                            <td>+00:00:27.294</td>
+                        <td>00:40:04.697</td>
+                        <td>+00:02:08.719</td>
+                            <td>1</td>
                         <td>30</td>
-                        <td class="bold">30</td>
+                        <td class="bold">31</td>
                     </tr>
                     <tr>
                         <td>8</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Paul Gunnarsson</td>
+                        <td class="text-left bold">Per Clevfors</td>
+                                <td>
+                                    <img src="./assets/teams/Strängnäs Bilforum Racing Team.png" style="max-width:2em; max-height:2em;" alt="Strängnäs Bilforum Racing Team" title="Strängnäs Bilforum Racing Team"/>
+                                </td>
                             <td>
-                                <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
+                                <img src="./assets/cars/hyundai.png" style="max-width:2em; max-height:2em;" alt="hyundai" title="hyundai"/>
                             </td>
-                            <td>00:07:39.499</td>
-                            <td>+00:00:18.075</td>
-                        <td>00:40:54.008</td>
-                        <td>+00:02:21.556</td>
+                            <td>00:07:37.706</td>
+                            <td>+00:00:29.199</td>
+                        <td>00:40:13.786</td>
+                        <td>+00:02:17.808</td>
                             <td></td>
                         <td>28</td>
                         <td class="bold">28</td>
@@ -311,14 +341,17 @@
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Thomas Dahn</td>
+                        <td class="text-left bold">Tomas Nordins</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
                             <td>
-                                <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
+                                <img src="./assets/cars/hyundai.png" style="max-width:2em; max-height:2em;" alt="hyundai" title="hyundai"/>
                             </td>
-                            <td>00:07:40.197</td>
-                            <td>+00:00:18.773</td>
-                        <td>00:40:54.478</td>
-                        <td>+00:02:22.026</td>
+                            <td>00:07:40.699</td>
+                            <td>+00:00:32.192</td>
+                        <td>00:40:27.558</td>
+                        <td>+00:02:31.580</td>
                             <td></td>
                         <td>26</td>
                         <td class="bold">26</td>
@@ -328,34 +361,40 @@
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Martin Zirnsack</td>
+                        <td class="text-left bold">Paul Gunnarsson</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
                             <td>
                                 <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
                             </td>
-                            <td>15:00:00.000</td>
-                            <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
+                            <td>00:07:39.499</td>
+                            <td>+00:00:30.992</td>
+                        <td>00:40:54.008</td>
+                        <td>+00:02:58.030</td>
                             <td></td>
-                        <td></td>
-                        <td class="bold"></td>
+                        <td>24</td>
+                        <td class="bold">24</td>
                     </tr>
                     <tr>
                         <td>11</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Simon Sandegren</td>
+                        <td class="text-left bold">Thomas Dahn</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
                             <td>
                                 <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
                             </td>
-                            <td>15:00:00.000</td>
-                            <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
+                            <td>00:07:40.197</td>
+                            <td>+00:00:31.690</td>
+                        <td>00:40:54.478</td>
+                        <td>+00:02:58.500</td>
                             <td></td>
-                        <td></td>
-                        <td class="bold"></td>
+                        <td>22</td>
+                        <td class="bold">22</td>
                     </tr>
                     <tr>
                         <td>12</td>
@@ -363,6 +402,9 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Anders Olsson</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
                             <td>
                                 <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
                             </td>
@@ -378,7 +420,7 @@
 
             </table>
             <div style="margin:0 auto; text-align:center;">
-                <p>Senast uppdaterad vid: 2024-02-10T12:14:52Z</p>
+                <p>Senast uppdaterad vid: 2024-02-10T12:47:55Z</p>
             </div>
         </div>
     </div>
