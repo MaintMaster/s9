@@ -60,6 +60,12 @@
 		</div>
 
 
+		<div class="w3-bar-item w3-right w3-hide-small w3-hide-medium">
+			<div class="logo">
+				<img src="./assets/country-flags/eur.png" style="max-height: 0.9em;border-radius: 0.3em;"/>
+			</div>
+			<span id="countdown2"></span>
+		</div>
 
         <!-- mobile stuff -->
         <a href="javascript:void(0)" class="logo w3-left w3-hide-large" style="font-size:3em;" onclick="openSeriesMobileNav()">
@@ -71,7 +77,7 @@
 
         <h3 class="w3-hide-large navTitle bold" style="display:block;">
             driver - Total
-            
+            <br><span id="countdown"></span>
         </h3>
 
 	</div>
@@ -118,8 +124,44 @@
             <a href="./overall-4-driver-results.html" style="">
                 <img src="./assets/country-flags/ita.png" />
             </a>
+            <a href="./overall-5-driver-results.html" style="">
+                <img src="./assets/country-flags/eur.png" />
+            </a>
 	</div>
 </div>
+<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("2024-04-22T18:00:00Z").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	// Get today's date and time
+	var now = new Date().getTime();
+
+	// Find the distance between now and the count down date
+	var distance = countDownDate - now;
+
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	// Output the result in an element with id="demo"
+	document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+	+ minutes + "m " + seconds + "s ";
+	document.getElementById("countdown2").innerHTML = days + "d " + hours + "h "
+	+ minutes + "m " + seconds + "s ";
+
+	// If the count down is over, write some text
+	if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("countdown").innerHTML = "Event Ended";
+		document.getElementById("countdown2").innerHTML = "Event Ended";
+	}
+	}, 1000);
+</script>
 
 <div id="container">
     <div id="flexContainer">
@@ -1961,6 +2003,27 @@
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
+                        <td class="text-left bold">Oliver Wallin</td>
+                            <td>A</td>
+                                <td>
+                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
+                                </td>
+                            <td>
+                                <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
+                            </td>
+                            <td>15:00:00.000</td>
+                            <td>N/A</td>
+                        <td>23:59:59.000</td>
+                        <td>N/A</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNS</td>
+                    </tr>
+                    <tr>
+                        <td>87</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
                         <td class="text-left bold">Mikael Bylund</td>
                             <td>B</td>
                                 <td>
@@ -1978,7 +2041,7 @@
                         <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>87</td>
+                        <td>88</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -1999,7 +2062,7 @@
                         <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>88</td>
+                        <td>89</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -2020,7 +2083,7 @@
                         <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>89</td>
+                        <td>90</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -2041,7 +2104,7 @@
                         <td class="bold">DNF</td>
                     </tr>
                     <tr>
-                        <td>90</td>
+                        <td>91</td>
                         <td>
                             <img src="./assets/country-flags/per.png" style="max-width:1.5em; max-height:1.5em;" alt="per" title="per"/>
                         </td>
@@ -2062,7 +2125,7 @@
                         <td class="bold">DNF</td>
                     </tr>
                     <tr>
-                        <td>91</td>
+                        <td>92</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -2083,7 +2146,7 @@
                         <td class="bold">DNF</td>
                     </tr>
                     <tr>
-                        <td>92</td>
+                        <td>93</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -2104,7 +2167,7 @@
                         <td class="bold">DNF</td>
                     </tr>
                     <tr>
-                        <td>93</td>
+                        <td>94</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -2123,27 +2186,6 @@
                             <td></td>
                         <td></td>
                         <td class="bold">DNF</td>
-                    </tr>
-                    <tr>
-                        <td>94</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Oliver Wallin</td>
-                            <td>B</td>
-                                <td>
-                                    <img src="./assets/teams/privateer.png" style="max-width:2em; max-height:2em;" alt="privateer" title="privateer"/>
-                                </td>
-                            <td>
-                                <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
-                            </td>
-                            <td>15:00:00.000</td>
-                            <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
                         <td>95</td>
@@ -2192,6 +2234,27 @@
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
+                        <td class="text-left bold">Stefan Magnusson</td>
+                            <td>B</td>
+                                <td>
+                                    <img src="./assets/teams/Apex Sweden.png" style="max-width:2em; max-height:2em;" alt="Apex Sweden" title="Apex Sweden"/>
+                                </td>
+                            <td>
+                                <img src="./assets/cars/ford.png" style="max-width:2em; max-height:2em;" alt="ford" title="ford"/>
+                            </td>
+                            <td>15:00:00.000</td>
+                            <td>N/A</td>
+                        <td>23:59:59.000</td>
+                        <td>N/A</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNS</td>
+                    </tr>
+                    <tr>
+                        <td>98</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
                         <td class="text-left bold">Marko Nevalainen</td>
                             <td>C</td>
                                 <td>
@@ -2209,7 +2272,7 @@
                         <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>98</td>
+                        <td>99</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -2230,7 +2293,7 @@
                         <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>99</td>
+                        <td>100</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -2251,7 +2314,7 @@
                         <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>100</td>
+                        <td>101</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -2272,7 +2335,7 @@
                         <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>101</td>
+                        <td>102</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -2293,7 +2356,7 @@
                         <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>102</td>
+                        <td>103</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -2314,7 +2377,7 @@
                         <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>103</td>
+                        <td>104</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -2335,7 +2398,7 @@
                         <td class="bold">DNF</td>
                     </tr>
                     <tr>
-                        <td>104</td>
+                        <td>105</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -2359,7 +2422,7 @@
 
             </table>
             <div style="margin:0 auto; text-align:center;">
-                <p>Senast uppdaterad vid: 2024-04-12T06:18:37Z</p>
+                <p>Senast uppdaterad vid: 2024-04-20T13:46:02Z</p>
             </div>
         </div>
     </div>

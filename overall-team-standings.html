@@ -60,6 +60,12 @@
 		</div>
 
 
+		<div class="w3-bar-item w3-right w3-hide-small w3-hide-medium">
+			<div class="logo">
+				<img src="./assets/country-flags/eur.png" style="max-height: 0.9em;border-radius: 0.3em;"/>
+			</div>
+			<span id="countdown2"></span>
+		</div>
 
         <!-- mobile stuff -->
         <a href="javascript:void(0)" class="logo w3-left w3-hide-large" style="font-size:3em;" onclick="openSeriesMobileNav()">
@@ -71,7 +77,7 @@
 
         <h3 class="w3-hide-large navTitle bold" style="display:block;">
             team - Total
-            
+            <br><span id="countdown"></span>
         </h3>
 
 	</div>
@@ -118,8 +124,44 @@
             <a href="./overall-4-driver-results.html" style="">
                 <img src="./assets/country-flags/ita.png" />
             </a>
+            <a href="./overall-5-driver-results.html" style="">
+                <img src="./assets/country-flags/eur.png" />
+            </a>
 	</div>
 </div>
+<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("2024-04-22T18:00:00Z").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	// Get today's date and time
+	var now = new Date().getTime();
+
+	// Find the distance between now and the count down date
+	var distance = countDownDate - now;
+
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	// Output the result in an element with id="demo"
+	document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+	+ minutes + "m " + seconds + "s ";
+	document.getElementById("countdown2").innerHTML = days + "d " + hours + "h "
+	+ minutes + "m " + seconds + "s ";
+
+	// If the count down is over, write some text
+	if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("countdown").innerHTML = "Event Ended";
+		document.getElementById("countdown2").innerHTML = "Event Ended";
+	}
+	}, 1000);
+</script>
 
     <div id="container">
         <div id="flexContainer">
@@ -143,6 +185,7 @@
                             <th><img src="./assets/country-flags/hrv.png"  alt="hrv"/></th>
                             <th><img src="./assets/country-flags/prt.png"  alt="prt"/></th>
                             <th><img src="./assets/country-flags/ita.png"  alt="ita"/></th>
+                            <th><img src="./assets/country-flags/eur.png"  alt="eur"/></th>
                             <th>Poäng</th>
                         </tr>
                     </thead>
@@ -178,6 +221,10 @@
                                 251
                             </td>
                             
+                            <td>
+                                0
+                            </td>
+                            
                             <td class="bold">1451</td>
                         </tr>
                         
@@ -211,6 +258,10 @@
                                 234
                             </td>
                             
+                            <td>
+                                0
+                            </td>
+                            
                             <td class="bold">1291</td>
                         </tr>
                         
@@ -241,10 +292,14 @@
                             </td>
                             
                             <td>
-                                241
+                                243
                             </td>
                             
-                            <td class="bold">1051</td>
+                            <td>
+                                99
+                            </td>
+                            
+                            <td class="bold">1152</td>
                         </tr>
                         
                         <tr>
@@ -277,7 +332,11 @@
                                 211
                             </td>
                             
-                            <td class="bold">1012</td>
+                            <td>
+                                55
+                            </td>
+                            
+                            <td class="bold">1067</td>
                         </tr>
                         
                         <tr>
@@ -310,14 +369,18 @@
                                 173
                             </td>
                             
-                            <td class="bold">886</td>
+                            <td>
+                                140
+                            </td>
+                            
+                            <td class="bold">1026</td>
                         </tr>
                         
                     </tbody>
 
                 </table>
                 <div style="margin:0 auto; text-align:center;">
-                    <p>Senast uppdaterad vid: 2024-04-12T06:18:37Z</p>
+                    <p>Senast uppdaterad vid: 2024-04-20T13:46:02Z</p>
                 </div>
             </div>
         </div>
